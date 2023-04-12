@@ -143,10 +143,10 @@ const empezarReloj = ()=>{
       <h1 className="text-5xl py-4 text-white">{duracion} + {descanso} <span className="text-[#b039ffc1]">Pomodoro</span></h1>
       </div>
       {/* Parte del descanso y la sesión */}
-      <div className="flex justify-between w-[28rem]">
+      <div className="flex justify-between xl:w-[28rem] w-80 items-center ">
       {/* Parte izquierda*/}
-        <div className="flex flex-col">
-          <h4 className="text-3xl">Tiempo de Descanso</h4>
+        <div className="flex flex-col items-center">
+          <h4 className="text-3xl text-center">Tiempo de Descanso</h4>
           <div className="flex gap-5 justify-center items-center">
             <button
               onClick={() => sumarDescanso()}
@@ -159,7 +159,7 @@ const empezarReloj = ()=>{
         </div>
         {/* Parte derecha*/}
         <div className="flex flex-col">
-          <h4 className="text-3xl">Duración de la sesión</h4>
+          <h4 className="text-3xl text-center">Duración de la sesión</h4>
           <div className="flex gap-5 justify-center items-center">
             <button
               onClick={() => sumarDuracion()}
